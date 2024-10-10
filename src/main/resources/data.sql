@@ -41,3 +41,29 @@ VALUES (1, 'Smartphone XYZ', 'Teléfono inteligente de última generación', 'El
        (9, 'Cafetera de cápsulas', 'Máquina de café con sistema de cápsulas compatible con varias marcas',
         'Electrónica', 89.99, 20),
        (10, 'Manta de lana', 'Manta suave y cálida de lana merina', 'Hogar', 29.99, 35);
+INSERT INTO Habitacion (id, tipo, capacidad, precio)
+VALUES (1, 'individual', 1, 60.00),
+       (2, 'individual', 1, 55.00),
+       (3, 'individual', 1, 70.00),
+       (4, 'doble', 2, 90.00),
+       (5, 'doble', 2, 85.00),
+       (6, 'suite', 4, 180.00),
+       (7, 'suite', 4, 160.00),
+       (8, 'suite', 4, 200.00);
+INSERT INTO Disponibilidad (id, id_habitacion, fecha, disponible)
+VALUES (1, 1, '2023-05-12', true),
+       (2, 1, '2023-05-13', true),
+       (3, 2, '2024-05-10', true),
+       (4, 2, '2024-05-11', false),
+       (5, 3, '2024-06-12', false),
+       (6, 3, '2024-06-13', true),
+       (7, 4, '2025-07-10', true),
+       (8, 4, '2025-07-11', true),
+       (9, 5, '2025-08-10', true),
+       (10, 5, '2025-08-11', true),
+       (11, 6, '2026-09-12', true),
+       (12, 6, '2026-09-13', true),
+       (13, 7, '2027-10-10', false),
+       (14, 7, '2027-10-11', true),
+       (15, 8, '2027-11-10', true),
+       (16, 8, '2027-11-11', true);
