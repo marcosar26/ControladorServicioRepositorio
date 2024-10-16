@@ -67,3 +67,26 @@ VALUES (1, 1, '2023-05-12', true),
        (14, 7, '2027-10-11', true),
        (15, 8, '2027-11-10', true),
        (16, 8, '2027-11-11', true);
+INSERT INTO Oficina (id, nombre, direccion, ciudad, telefono)
+VALUES (1, 'Oficina Central', 'Calle Principal 123', 'Ciudad Principal', '123-456-7890'),
+       (2, 'Oficina Sucursal 1', 'Avenida Secundaria 456', 'Ciudad Secundaria', '987-654-3210'),
+       (3, 'Oficina Sucursal 2', 'Calle Alternativa 789', 'Ciudad Alternativa', '555-123-4567'),
+       (4, 'Oficina Sucursal 3', 'Carrera Terciaria 321', 'Ciudad Terciaria', '789-987-6543'),
+       (5, 'Oficina Sucursal 4', 'Paseo Cuaternario 654', 'Ciudad Cuaternaria', '321-555-7890');
+
+INSERT INTO Cliente (id, dni, nombre, apellidos, direccion, telefono, id_oficina)
+VALUES (1, '12345678A', 'Juan', 'Pérez López', 'Calle Cliente 1', '111-222-3333', 1),
+       (2, '87654321B', 'María', 'Gómez Martínez', 'Avenida Cliente 2', '444-555-6666', 2),
+       (3, '56789012C', 'Pedro', 'Sánchez García', 'Plaza Cliente 3', '777-888-9999', 3),
+       (4, '90123456D', 'Luisa', 'Fernández Rodríguez', 'Avenida Cliente 4', '123-456-7890', 4),
+       (5, '34567890E', 'Ana', 'Martín Sánchez', 'Calle Cliente 5', '234-567-8901', 5),
+       (6, '78901234F', 'David', 'González López', 'Avenida Cliente 6', '345-678-9012', 1),
+       (7, '23456789G', 'Laura', 'Rodríguez Martínez', 'Plaza Cliente 7', '456-789-0123', 2),
+       (8, '01234567H', 'Sara', 'López Sánchez', 'Calle Cliente 8', '567-890-1234', 3),
+       (9, '45678901I', 'Daniel', 'Pérez García', 'Avenida Cliente 9', '678-901-2345', 4),
+       (10, '89012345J', 'Elena', 'Sánchez Rodríguez', 'Plaza Cliente 10', '789-012-3456', 5),
+       (11, '23456781K', 'Carlos', 'Gómez Pérez', 'Calle Cliente 11', '890-123-4567', 1),
+       (12, '87654321L', 'Patricia', 'Martínez Gómez', 'Avenida Cliente 12', '901-234-5678', 2),
+       (13, '32109876M', 'Javier', 'García Martínez', 'Plaza Cliente 13', '012-345-6789', 3),
+       (14, '76543210N', 'Carmen', 'López Fernández', 'Calle Cliente 14', '210-987-6543', 4),
+       (15, '10987654O', 'Roberto', 'Sánchez González', 'Avenida Cliente 15', '543-210-9876', 5);
